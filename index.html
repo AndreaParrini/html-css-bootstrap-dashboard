@@ -12,17 +12,25 @@
     
     <header class="bg-dark text-light py-3">
         <nav>
-            <div class="container-fluid d-flex justify-content-between justify-content-lg-start align-items-center">
-                <div class="logo">
-                    <img class="mw-100" src="./img/duck.png" alt="">
+            <div class="container-fluid d-flex justify-content-between justify-content-lg-between align-items-center">
+                <div class="d-flex align-items-center gap-2">
+                    <div class="logo">
+                        <img class="mw-100" src="./img/duck.png" alt="">
+                    </div>
+                    <ul class="menu list-unstyled mb-0 d-none d-lg-flex gap-3 ms-2 text-secondary">
+                        <li>Catalogo Libri</li>
+                        <li>Anagrafica Utenti</li>
+                        <li>Storico Prestiti</li>
+                        <li>Help</li>
+                    </ul>
                 </div>
-                <ul class="menu list-unstyled mb-0 d-none d-lg-flex gap-3 ms-2 text-secondary">
-                    <li>Catalogo Libri</li>
-                    <li>Anagrafica Utenti</li>
-                    <li>Storico Prestiti</li>
-                    <li>Help</li>
-                </ul>
-                <a href="#" class="btn text-light border-1 border-light d-lg-none"><i class="fa-solid fa-bars"></i></a>
+                <div>
+                    <a href="#" class="btn text-light border-1 border-light d-lg-none"><i class="fa-solid fa-bars"></i></a>
+                    <div class="d-none d-lg-block">
+                        <input class="rounded-2 py-1" type="text" name="" id="" placeholder="Cerca...">
+                        <a href="#" class="btn btn-dark border-light">Cerca</a>
+                    </div>
+                </div>
             </div>
         </nav>
     </header>

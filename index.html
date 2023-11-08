@@ -4,6 +4,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Bootstrap demo</title>
+    <link rel="stylesheet" href="./css/style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
   </head>
@@ -13,13 +14,13 @@
         <nav>
             <div class="container-fluid d-flex justify-content-between justify-content-lg-start align-items-center">
                 <div class="logo">
-                    LOGO
+                    <img class="mw-100" src="./img/duck.png" alt="">
                 </div>
-                <ul class="menu list-unstyled mb-0 d-none d-lg-flex gap-2 ms-2">
-                    <li>lorem</li>
-                    <li>lorem</li>
-                    <li>lorem</li>
-                    <li>lorem</li>
+                <ul class="menu list-unstyled mb-0 d-none d-lg-flex gap-3 ms-2 text-secondary">
+                    <li>Catalogo Libri</li>
+                    <li>Anagrafica Utenti</li>
+                    <li>Storico Prestiti</li>
+                    <li>Help</li>
                 </ul>
                 <a href="#" class="btn text-light border-1 border-light d-lg-none"><i class="fa-solid fa-bars"></i></a>
             </div>
@@ -28,13 +29,12 @@
 
     <main>
         <div class="container ">
-            <div class="title d-flex justify-content-between mt-3">
-                <h1>Lorem</h1>
+            <div class="title d-flex justify-content-between my-4">
+                <h1 class="fw-light fs-3">Catalogo Libri</h1>
                 <div>
-                    <a href="" class="btn btn-primary text-light">Add Folder</a>
+                    <a href="" class="btn btn-primary text-light">Aggiungi Libro</a>
                 </div>
             </div>
-
             <table class="table">
                 <thead>
                   <tr>
@@ -44,7 +44,7 @@
                     <th scope="col" class="text-center">Azioni</th>
                   </tr>
                 </thead>
-                <tbody>
+                <tbody class="fw-light">
                   <tr class="bg-secondary bg-opacity-10">
                     <td class="bg-transparent" scope="row">
                         I pilastri della terra
@@ -55,7 +55,7 @@
                     <td class="bg-transparent">
                         <span class="badge bg-success">Disponibile</span>
                     </td>
-                    <td class="bg-transparent text-center w-auto">
+                    <td class="bg-transparent text-center w-25">
                         <div>
                             <a href="" class="btn text-dark border-1 border-dark px-2 py-1"><i class="fa-solid fa-pencil fa-sm"></i></a>
                             <a href="" class="btn text-dark border-1 border-dark px-2 py-1"><i class="fa-solid fa-trash fa-sm"></i></i></a>
@@ -72,9 +72,11 @@
                     <td class="bg-transparent">
                         <span class="badge bg-success">Disponibile</span>
                     </td>
-                    <td class="bg-transparent">
-                        <a href="" class="btn text-dark border-1 border-dark"><i class="fa-solid fa-pencil"></i></a>
-                        <a href="" class="btn text-dark border-1 border-dark"><i class="fa-solid fa-trash"></i></i></a>
+                    <td class="bg-transparent text-center w-25">
+                        <div>
+                            <a href="" class="btn text-dark border-1 border-dark px-2 py-1"><i class="fa-solid fa-pencil fa-sm"></i></a>
+                            <a href="" class="btn text-dark border-1 border-dark px-2 py-1"><i class="fa-solid fa-trash fa-sm"></i></i></a>
+                        </div>
                     </td>
                   </tr>
                   <tr class="bg-secondary bg-opacity-10">
@@ -87,9 +89,11 @@
                     <td class="bg-transparent">
                         <span class="badge bg-warning">In prestito</span>
                     </td>
-                    <td class="bg-transparent">
-                        <a href="" class="btn text-dark border-1 border-dark"><i class="fa-solid fa-pencil"></i></a>
-                        <a href="" class="btn text-dark border-1 border-dark"><i class="fa-solid fa-trash"></i></i></a>
+                    <td class="bg-transparent text-center w-25">
+                        <div>
+                            <a href="" class="btn text-dark border-1 border-dark px-2 py-1"><i class="fa-solid fa-pencil fa-sm"></i></a>
+                            <a href="" class="btn text-dark border-1 border-dark px-2 py-1"><i class="fa-solid fa-trash fa-sm"></i></i></a>
+                        </div>
                     </td>
                   </tr>
                   <tr class="">
@@ -102,9 +106,11 @@
                     <td class="bg-transparent">
                         <span class="badge bg-success">Disponibile</span>
                     </td>
-                    <td class="bg-transparent">
-                        <a href="" class="btn text-dark border-1 border-dark"><i class="fa-solid fa-pencil"></i></a>
-                        <a href="" class="btn text-dark border-1 border-dark"><i class="fa-solid fa-trash"></i></i></a>
+                    <td class="bg-transparent text-center w-25">
+                        <div>
+                            <a href="" class="btn text-dark border-1 border-dark px-2 py-1"><i class="fa-solid fa-pencil fa-sm"></i></a>
+                            <a href="" class="btn text-dark border-1 border-dark px-2 py-1"><i class="fa-solid fa-trash fa-sm"></i></i></a>
+                        </div>
                     </td>
                   </tr>
                   <tr class="bg-secondary bg-opacity-10">
@@ -117,9 +123,11 @@
                     <td class="bg-transparent">
                         <span class="badge bg-danger">Non disponibile</span>
                     </td>
-                    <td class="bg-transparent">
-                        <a href="" class="btn text-dark border-1 border-dark"><i class="fa-solid fa-pencil"></i></a>
-                        <a href="" class="btn text-dark border-1 border-dark"><i class="fa-solid fa-trash"></i></i></a>
+                    <td class="bg-transparent text-center w-25">
+                        <div>
+                            <a href="" class="btn text-dark border-1 border-dark px-2 py-1"><i class="fa-solid fa-pencil fa-sm"></i></a>
+                            <a href="" class="btn text-dark border-1 border-dark px-2 py-1"><i class="fa-solid fa-trash fa-sm"></i></i></a>
+                        </div>
                     </td>
                   </tr>
                   <tr class="">
@@ -132,9 +140,11 @@
                     <td class="bg-transparent">
                         <span class="badge bg-success">Disponibile</span>
                     </td>
-                    <td class="bg-transparent">
-                        <a href="" class="btn text-dark border-1 border-dark"><i class="fa-solid fa-pencil"></i></a>
-                        <a href="" class="btn text-dark border-1 border-dark"><i class="fa-solid fa-trash"></i></i></a>
+                    <td class="bg-transparent text-center w-25">
+                        <div>
+                            <a href="" class="btn text-dark border-1 border-dark px-2 py-1"><i class="fa-solid fa-pencil fa-sm"></i></a>
+                            <a href="" class="btn text-dark border-1 border-dark px-2 py-1"><i class="fa-solid fa-trash fa-sm"></i></i></a>
+                        </div>
                     </td>
                   </tr>
                   <tr class="bg-secondary bg-opacity-10">
@@ -147,9 +157,11 @@
                     <td class="bg-transparent">
                         <span class="badge bg-warning">In prestito</span>
                     </td>
-                    <td class="bg-transparent">
-                        <a href="" class="btn text-dark border-1 border-dark"><i class="fa-solid fa-pencil"></i></a>
-                        <a href="" class="btn text-dark border-1 border-dark"><i class="fa-solid fa-trash"></i></i></a>
+                    <td class="bg-transparent text-center w-25">
+                        <div>
+                            <a href="" class="btn text-dark border-1 border-dark px-2 py-1"><i class="fa-solid fa-pencil fa-sm"></i></a>
+                            <a href="" class="btn text-dark border-1 border-dark px-2 py-1"><i class="fa-solid fa-trash fa-sm"></i></i></a>
+                        </div>
                     </td>
                   </tr>
                   <tr class="">
@@ -162,9 +174,11 @@
                     <td class="bg-transparent">
                         <span class="badge bg-success">Disponibile</span>
                     </td>
-                    <td class="bg-transparent">
-                        <a href="" class="btn text-dark border-1 border-dark"><i class="fa-solid fa-pencil"></i></a>
-                        <a href="" class="btn text-dark border-1 border-dark"><i class="fa-solid fa-trash"></i></i></a>
+                    <td class="bg-transparent text-center w-25">
+                        <div>
+                            <a href="" class="btn text-dark border-1 border-dark px-2 py-1"><i class="fa-solid fa-pencil fa-sm"></i></a>
+                            <a href="" class="btn text-dark border-1 border-dark px-2 py-1"><i class="fa-solid fa-trash fa-sm"></i></i></a>
+                        </div>
                     </td>
                   </tr>
                   <tr class="bg-secondary bg-opacity-10">
@@ -177,9 +191,11 @@
                     <td class="bg-transparent">
                         <span class="badge bg-danger">Non disponibile</span>
                     </td>
-                    <td class="bg-transparent">
-                        <a href="" class="btn text-dark border-1 border-dark"><i class="fa-solid fa-pencil"></i></a>
-                        <a href="" class="btn text-dark border-1 border-dark"><i class="fa-solid fa-trash"></i></i></a>
+                    <td class="bg-transparent text-center w-25">
+                        <div>
+                            <a href="" class="btn text-dark border-1 border-dark px-2 py-1"><i class="fa-solid fa-pencil fa-sm"></i></a>
+                            <a href="" class="btn text-dark border-1 border-dark px-2 py-1"><i class="fa-solid fa-trash fa-sm"></i></i></a>
+                        </div>
                     </td>
                   </tr>
                   <tr class="">
@@ -192,9 +208,11 @@
                     <td class="bg-transparent">
                         <span class="badge bg-warning">In Prestito</span>
                     </td>
-                    <td class="bg-transparent">
-                        <a href="" class="btn text-dark border-1 border-dark"><i class="fa-solid fa-pencil"></i></a>
-                        <a href="" class="btn text-dark border-1 border-dark"><i class="fa-solid fa-trash"></i></i></a>
+                    <td class="bg-transparent text-center w-25">
+                        <div>
+                            <a href="" class="btn text-dark border-1 border-dark px-2 py-1"><i class="fa-solid fa-pencil fa-sm"></i></a>
+                            <a href="" class="btn text-dark border-1 border-dark px-2 py-1"><i class="fa-solid fa-trash fa-sm"></i></i></a>
+                        </div>
                     </td>
                   </tr>
                   <tr class="bg-secondary bg-opacity-10">
@@ -207,9 +225,11 @@
                     <td class="bg-transparent">
                         <span class="badge bg-success">Disponibile</span>
                     </td>
-                    <td class="bg-transparent">
-                        <a href="" class="btn text-dark border-1 border-dark"><i class="fa-solid fa-pencil"></i></a>
-                        <a href="" class="btn text-dark border-1 border-dark"><i class="fa-solid fa-trash"></i></i></a>
+                    <td class="bg-transparent text-center w-25">
+                        <div>
+                            <a href="" class="btn text-dark border-1 border-dark px-2 py-1"><i class="fa-solid fa-pencil fa-sm"></i></a>
+                            <a href="" class="btn text-dark border-1 border-dark px-2 py-1"><i class="fa-solid fa-trash fa-sm"></i></i></a>
+                        </div>
                     </td>
                   </tr>
                   <tr class="">
@@ -222,9 +242,11 @@
                     <td class="bg-transparent">
                         <span class="badge bg-success">Disponibile</span>
                     </td>
-                    <td class="bg-transparent">
-                        <a href="" class="btn text-dark border-1 border-dark"><i class="fa-solid fa-pencil"></i></a>
-                        <a href="" class="btn text-dark border-1 border-dark"><i class="fa-solid fa-trash"></i></i></a>
+                    <td class="bg-transparent text-center w-25">
+                        <div>
+                            <a href="" class="btn text-dark border-1 border-dark px-2 py-1"><i class="fa-solid fa-pencil fa-sm"></i></a>
+                            <a href="" class="btn text-dark border-1 border-dark px-2 py-1"><i class="fa-solid fa-trash fa-sm"></i></i></a>
+                        </div>
                     </td>
                   </tr>
                 </tbody>

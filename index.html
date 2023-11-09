@@ -10,27 +10,35 @@
   </head>
   <body>
     
-    <header class="bg-dark text-light py-3">
-        <nav>
-            <div class="container-fluid d-flex justify-content-between justify-content-lg-between align-items-center">
-                <div class="d-flex align-items-center gap-2">
-                    <div class="logo">
-                        <img class="mw-100" src="./img/duck.png" alt="">
-                    </div>
-                    <ul class="menu list-unstyled mb-0 d-none d-lg-flex gap-3 ms-2 text-secondary">
-                        <li>Catalogo Libri</li>
-                        <li>Anagrafica Utenti</li>
-                        <li>Storico Prestiti</li>
-                        <li>Help</li>
-                    </ul>
-                </div>
-                <div>
-                    <a href="#" class="btn text-light border-1 border-light d-lg-none"><i class="fa-solid fa-bars"></i></a>
-                    <div class="d-none d-lg-flex align-items-end gap-1">
-                        <input class="rounded-2 py-1" type="text" name="" id="search" placeholder="Cerca...">
-                        <a href="#" class="btn btn-dark border-light">Cerca</a>
-                    </div>
-                </div>
+    <header>
+        <nav class="navbar navbar-expand-lg bg-dark" data-bs-theme="dark" >
+            <div class="container-fluid">
+              <a class="navbar-brand" href="#">
+                <img src="./img/duck.png" alt="" class="logo">
+              </a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <ul class="navbar-nav mb-2 mb-lg-0 d-none d-lg-flex text-light">
+                <li class="nav-item">
+                  <a class="nav-link text-light" href="#">Catalogo Libri</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Anagrafica Utenti</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Storico Prestiti</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">Help</a>
+                  </li>
+              </ul>
+              <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <form class="d-flex  ms-auto" role="search">
+                  <input class="form-control me-2" type="search" placeholder="Cerca...." aria-label="Search">
+                  <button class="btn btn-outline-light" type="submit">Cerca</button>
+                </form>
+              </div>
             </div>
         </nav>
     </header>
@@ -45,7 +53,7 @@
                             <a href="" class="btn btn-primary text-light">Aggiungi Libro</a>
                         </div>
                     </div>
-                    <table class="table">
+                    <table class="table table-striped">
                         <thead>
                           <tr>
                             <th scope="col">Titolo</th>
@@ -55,17 +63,17 @@
                           </tr>
                         </thead>
                         <tbody class="fw-light">
-                          <tr class="bg-secondary bg-opacity-10">
-                            <td class="bg-transparent" scope="row">
+                          <tr>
+                            <td scope="row">
                                 I pilastri della terra
                             </td>
-                            <td class="bg-transparent d-none d-md-table-cell">
+                            <td class="d-none d-md-table-cell">
                                 -
                             </td>
-                            <td class="bg-transparent">
+                            <td>
                                 <span class="badge bg-success">Disponibile</span>
                             </td>
-                            <td class="bg-transparent text-center w-25">
+                            <td class="text-center w-25">
                                 <div>
                                     <a href="" class="btn text-dark border-1 border-dark px-2 py-1"><i class="fa-solid fa-pencil fa-sm"></i></a>
                                     <a href="" class="btn text-dark border-1 border-dark px-2 py-1"><i class="fa-solid fa-trash fa-sm"></i></a>
@@ -73,33 +81,33 @@
                             </td>
                           </tr>
                           <tr class="">
-                            <td class="bg-transparent" scope="row">
+                            <td scope="row">
                                 I promessi sposi
                             </td>
-                            <td class="bg-transparent d-none d-md-table-cell">
+                            <td class="d-none d-md-table-cell">
                                 -
                             </td>
-                            <td class="bg-transparent">
+                            <td>
                                 <span class="badge bg-success">Disponibile</span>
                             </td>
-                            <td class="bg-transparent text-center w-25">
+                            <td class="text-center w-25">
                                 <div>
                                     <a href="" class="btn text-dark border-1 border-dark px-2 py-1"><i class="fa-solid fa-pencil fa-sm"></i></a>
                                     <a href="" class="btn text-dark border-1 border-dark px-2 py-1"><i class="fa-solid fa-trash fa-sm"></i></a>
                                 </div>
                             </td>
                           </tr>
-                          <tr class="bg-secondary bg-opacity-10">
-                            <td class="bg-transparent" scope="row">
+                          <tr>
+                            <td scope="row">
                                 Il signore degli anelli
                             </td>
-                            <td class="bg-transparent d-none d-md-table-cell">
+                            <td class="d-none d-md-table-cell">
                                 18/10/2023
                             </td>
-                            <td class="bg-transparent">
+                            <td>
                                 <span class="badge bg-warning">In prestito</span>
                             </td>
-                            <td class="bg-transparent text-center w-25">
+                            <td class="text-center w-25">
                                 <div>
                                     <a href="" class="btn text-dark border-1 border-dark px-2 py-1"><i class="fa-solid fa-pencil fa-sm"></i></a>
                                     <a href="" class="btn text-dark border-1 border-dark px-2 py-1"><i class="fa-solid fa-trash fa-sm"></i></a>
@@ -107,33 +115,33 @@
                             </td>
                           </tr>
                           <tr class="">
-                            <td class="bg-transparent" scope="row">
+                            <td scope="row">
                                 Harry Potter e la pietra folosofale
                             </td>
-                            <td class="bg-transparent d-none d-md-table-cell">
+                            <td class="d-none d-md-table-cell">
                                 -
                             </td>
-                            <td class="bg-transparent">
+                            <td>
                                 <span class="badge bg-success">Disponibile</span>
                             </td>
-                            <td class="bg-transparent text-center w-25">
+                            <td class="text-center w-25">
                                 <div>
                                     <a href="" class="btn text-dark border-1 border-dark px-2 py-1"><i class="fa-solid fa-pencil fa-sm"></i></a>
                                     <a href="" class="btn text-dark border-1 border-dark px-2 py-1"><i class="fa-solid fa-trash fa-sm"></i></a>
                                 </div>
                             </td>
                           </tr>
-                          <tr class="bg-secondary bg-opacity-10">
-                            <td class="bg-transparent" scope="row">
+                          <tr>
+                            <td scope="row">
                                 Il codice Da Vinci
                             </td>
-                            <td class="bg-transparent d-none d-md-table-cell">
+                            <td class="d-none d-md-table-cell">
                                 -
                             </td>
-                            <td class="bg-transparent">
+                            <td>
                                 <span class="badge bg-danger">Non disponibile</span>
                             </td>
-                            <td class="bg-transparent text-center w-25">
+                            <td class="text-center w-25">
                                 <div>
                                     <a href="" class="btn text-dark border-1 border-dark px-2 py-1"><i class="fa-solid fa-pencil fa-sm"></i></a>
                                     <a href="" class="btn text-dark border-1 border-dark px-2 py-1"><i class="fa-solid fa-trash fa-sm"></i></a>
@@ -141,33 +149,33 @@
                             </td>
                           </tr>
                           <tr class="">
-                            <td class="bg-transparent" scope="row">
+                            <td scope="row">
                                 Shining
                             </td>
-                            <td class="bg-transparent d-none d-md-table-cell">
+                            <td class="d-none d-md-table-cell">
                                 -
                             </td>
-                            <td class="bg-transparent">
+                            <td>
                                 <span class="badge bg-success">Disponibile</span>
                             </td>
-                            <td class="bg-transparent text-center w-25">
+                            <td class="text-center w-25">
                                 <div>
                                     <a href="" class="btn text-dark border-1 border-dark px-2 py-1"><i class="fa-solid fa-pencil fa-sm"></i></a>
                                     <a href="" class="btn text-dark border-1 border-dark px-2 py-1"><i class="fa-solid fa-trash fa-sm"></i></a>
                                 </div>
                             </td>
                           </tr>
-                          <tr class="bg-secondary bg-opacity-10">
-                            <td class="bg-transparent" scope="row">
+                          <tr>
+                            <td scope="row">
                                 La divina commedia
                             </td>
-                            <td class="bg-transparent d-none d-md-table-cell">
+                            <td class="d-none d-md-table-cell">
                                 21/09/2023
                             </td>
-                            <td class="bg-transparent">
+                            <td>
                                 <span class="badge bg-warning">In prestito</span>
                             </td>
-                            <td class="bg-transparent text-center w-25">
+                            <td class="text-center w-25">
                                 <div>
                                     <a href="" class="btn text-dark border-1 border-dark px-2 py-1"><i class="fa-solid fa-pencil fa-sm"></i></a>
                                     <a href="" class="btn text-dark border-1 border-dark px-2 py-1"><i class="fa-solid fa-trash fa-sm"></i></a>
@@ -175,33 +183,33 @@
                             </td>
                           </tr>
                           <tr class="">
-                            <td class="bg-transparent" scope="row">
+                            <td scope="row">
                                 Il trono di spade
                             </td>
-                            <td class="bg-transparent d-none d-md-table-cell">
+                            <td class="d-none d-md-table-cell">
                                 -
                             </td>
-                            <td class="bg-transparent">
+                            <td class="">
                                 <span class="badge bg-success">Disponibile</span>
                             </td>
-                            <td class="bg-transparent text-center w-25">
+                            <td class="text-center w-25">
                                 <div>
                                     <a href="" class="btn text-dark border-1 border-dark px-2 py-1"><i class="fa-solid fa-pencil fa-sm"></i></a>
                                     <a href="" class="btn text-dark border-1 border-dark px-2 py-1"><i class="fa-solid fa-trash fa-sm"></i></a>
                                 </div>
                             </td>
                           </tr>
-                          <tr class="bg-secondary bg-opacity-10">
-                            <td class="bg-transparent" scope="row">
+                          <tr>
+                            <td scope="row">
                                 Il mondo di Sofia
                             </td>
-                            <td class="bg-transparent d-none d-md-table-cell">
+                            <td class="d-none d-md-table-cell">
                                 -
                             </td>
-                            <td class="bg-transparent">
+                            <td>
                                 <span class="badge bg-danger">Non disponibile</span>
                             </td>
-                            <td class="bg-transparent text-center w-25">
+                            <td class="text-center w-25">
                                 <div>
                                     <a href="" class="btn text-dark border-1 border-dark px-2 py-1"><i class="fa-solid fa-pencil fa-sm"></i></a>
                                     <a href="" class="btn text-dark border-1 border-dark px-2 py-1"><i class="fa-solid fa-trash fa-sm"></i></a>
@@ -209,33 +217,33 @@
                             </td>
                           </tr>
                           <tr class="">
-                            <td class="bg-transparent" scope="row">
+                            <td scope="row">
                                 Le cronache di Narnia: il leone, la strega e l'armadio
                             </td>
-                            <td class="bg-transparent d-none d-md-table-cell">
+                            <td class="d-none d-md-table-cell">
                                 25/07/2023
                             </td>
-                            <td class="bg-transparent">
+                            <td>
                                 <span class="badge bg-warning">In Prestito</span>
                             </td>
-                            <td class="bg-transparent text-center w-25">
+                            <td class="text-center w-25">
                                 <div>
                                     <a href="" class="btn text-dark border-1 border-dark px-2 py-1"><i class="fa-solid fa-pencil fa-sm"></i></a>
                                     <a href="" class="btn text-dark border-1 border-dark px-2 py-1"><i class="fa-solid fa-trash fa-sm"></i></a>
                                 </div>
                             </td>
                           </tr>
-                          <tr class="bg-secondary bg-opacity-10">
-                            <td class="bg-transparent" scope="row">
+                          <tr>
+                            <td scope="row">
                                 Il piccolo principe
                             </td>
-                            <td class="bg-transparent d-none d-md-table-cell">
+                            <td class="d-none d-md-table-cell">
                                 -
                             </td>
-                            <td class="bg-transparent">
+                            <td>
                                 <span class="badge bg-success">Disponibile</span>
                             </td>
-                            <td class="bg-transparent text-center w-25">
+                            <td class="text-center w-25">
                                 <div>
                                     <a href="" class="btn text-dark border-1 border-dark px-2 py-1"><i class="fa-solid fa-pencil fa-sm"></i></a>
                                     <a href="" class="btn text-dark border-1 border-dark px-2 py-1"><i class="fa-solid fa-trash fa-sm"></i></a>
@@ -243,16 +251,16 @@
                             </td>
                           </tr>
                           <tr class="">
-                            <td class="bg-transparent" scope="row">
+                            <td scope="row">
                                 La storia infinita
                             </td>
-                            <td class="bg-transparent d-none d-md-table-cell">
+                            <td class="d-none d-md-table-cell">
                                 -
                             </td>
-                            <td class="bg-transparent">
+                            <td>
                                 <span class="badge bg-success">Disponibile</span>
                             </td>
-                            <td class="bg-transparent text-center w-25">
+                            <td class="text-center w-25">
                                 <div>
                                     <a href="" class="btn text-dark border-1 border-dark px-2 py-1"><i class="fa-solid fa-pencil fa-sm"></i></a>
                                     <a href="" class="btn text-dark border-1 border-dark px-2 py-1"><i class="fa-solid fa-trash fa-sm"></i></a>

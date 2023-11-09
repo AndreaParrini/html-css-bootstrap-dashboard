@@ -50,7 +50,38 @@
                     <div class="title d-flex justify-content-between ">
                         <h1 class="fw-light fs-3">Catalogo Libri</h1>
                         <div>
-                            <a href="" class="btn btn-primary text-light">Aggiungi Libro</a>
+                            <a class="btn btn-primary" data-bs-toggle="offcanvas" href="#offcanvasExample" role="button" aria-controls="offcanvasExample">
+                                Aggiungi Libro
+                            </a>
+                            <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasExample" aria-labelledby="offcanvasExampleLabel">
+                                <div class="offcanvas-header">
+                                    <h5 class="offcanvas-title" id="offcanvasExampleLabel">Aggiungi un libro da dare in prestito</h5>
+                                    <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                                </div>
+                                <div class="offcanvas-body">
+                                    <div class="mb-3">
+                                        <label for="exampleFormControlInput1" class="form-label">Nome Libro</label>
+                                        <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="Inserisci qua il nome del tuo Libro">
+                                    </div>
+                                    <div class="mb-3">
+                                        <label for="exampleFormControlInput2" class="form-label">Data Prestito</label>
+                                        <input type="date" class="form-control" id="exampleFormControlInput2" placeholder="Inserisci la data">
+                                    </div>
+                                    <div class="form-floating">
+                                        <select class="form-select" id="floatingSelect" aria-label="Floating label select example">
+                                          <option selected></option>
+                                          <option value="1">Disponibile</option>
+                                          <option value="2">In Prestito</option>
+                                          <option value="3">Non Disponibile</option>
+                                        </select>
+                                        <label for="floatingSelect">Inserisci lo stato del libro</label>
+                                    </div>
+                                    <div class="text-center my-4">
+                                        <a href="./index.html" class="btn btn-outline-success">Inserisci</a>
+                                        <button type="button" class="btn btn-outline-secondary">Annula</button>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                     </div>
                     <table class="table table-striped">
@@ -75,8 +106,32 @@
                             </td>
                             <td class="text-center w-25">
                                 <div>
-                                    <a href="" class="btn text-dark border-1 border-dark px-2 py-1"><i class="fa-solid fa-pencil fa-sm"></i></a>
-                                    <a href="" class="btn text-dark border-1 border-dark px-2 py-1"><i class="fa-solid fa-trash fa-sm"></i></a>
+                                    <a href="" class="btn text-dark border-1 border-dark px-2 py-1">
+                                        <i class="fa-solid fa-pencil fa-sm"></i>
+                                    </a>
+
+                                    <button type="button" class="btn btn-outline-secondary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                                        <i class="fa-solid fa-trash fa-sm"></i>
+                                    </button>
+                                    
+                                    <!-- Modal -->
+                                    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                        <div class="modal-dialog">
+                                        <div class="modal-content">
+                                            <div class="modal-header">
+                                            <h1 class="modal-title fs-5" id="exampleModalLabel">Conferma Cancellazione</h1>
+                                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                            </div>
+                                            <div class="modal-body">
+                                            Sei sicuro di voler rimuovere "I pilastri della terra" dalla lista ?
+                                            </div>
+                                            <div class="modal-footer">
+                                            <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Cancella</button>
+                                            <button type="button" class="btn btn-secondary">Annulla</button>
+                                            </div>
+                                        </div>
+                                        </div>
+                                    </div>
                                 </div>
                             </td>
                           </tr>

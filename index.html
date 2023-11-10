@@ -49,24 +49,35 @@
                 <div class="col-12 col-xl-9">
                     <div class="title d-flex justify-content-between ">
                         <h1 class="fw-light fs-3">Catalogo Libri</h1>
+                        <!-- start section add book -->
                         <div>
                             <a class="btn btn-primary" data-bs-toggle="offcanvas" href="#offcanvasExample" role="button" aria-controls="offcanvasExample">
                                 Aggiungi Libro
                             </a>
+                            <!-- start offcanvas -->
                             <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasExample" aria-labelledby="offcanvasExampleLabel">
                                 <div class="offcanvas-header">
-                                    <h5 class="offcanvas-title" id="offcanvasExampleLabel">Aggiungi un libro da dare in prestito</h5>
+                                    <h5 class="offcanvas-title" id="offcanvasExampleLabel">
+                                        Aggiungi un libro da dare in prestito
+                                    </h5>
                                     <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
                                 </div>
                                 <div class="offcanvas-body">
+                                    <!-- label insert name -->
                                     <div class="mb-3">
-                                        <label for="exampleFormControlInput1" class="form-label">Nome Libro</label>
+                                        <label for="exampleFormControlInput1" class="form-label">
+                                            Nome Libro
+                                        </label>
                                         <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="Inserisci qua il nome del tuo Libro">
                                     </div>
+                                    <!-- label insert date -->
                                     <div class="mb-3">
-                                        <label for="exampleFormControlInput2" class="form-label">Data Prestito</label>
+                                        <label for="exampleFormControlInput2" class="form-label">
+                                            Data Prestito
+                                        </label>
                                         <input type="date" class="form-control" id="exampleFormControlInput2" placeholder="Inserisci la data">
                                     </div>
+                                    <!-- label insert stato -->
                                     <div class="form-floating">
                                         <select class="form-select" id="floatingSelect" aria-label="Floating label select example">
                                           <option selected></option>
@@ -74,16 +85,26 @@
                                           <option value="2">In Prestito</option>
                                           <option value="3">Non Disponibile</option>
                                         </select>
-                                        <label for="floatingSelect">Inserisci lo stato del libro</label>
+                                        <label for="floatingSelect">
+                                            Inserisci lo stato del libro
+                                        </label>
                                     </div>
+                                    <!-- buttons -->
                                     <div class="text-center my-4">
-                                        <a href="./index.html" class="btn btn-outline-success">Inserisci</a>
-                                        <button type="button" class="btn btn-outline-secondary">Annula</button>
+                                        <a href="./index.html" class="btn btn-outline-success">
+                                            Inserisci
+                                        </a>
+                                        <button type="button" class="btn btn-outline-secondary">
+                                            Annula
+                                        </button>
                                     </div>
                                 </div>
                             </div>
+                            <!-- end offcanvas -->
                         </div>
+                        <!-- end section add book -->
                     </div>
+                    <!-- start table -->
                     <table class="table table-striped">
                         <thead>
                           <tr>
@@ -106,10 +127,13 @@
                             </td>
                             <td class="text-center w-25">
                                 <div>
-                                    <a href="" class="btn text-dark border-1 border-dark px-2 py-1">
-                                        <i class="fa-solid fa-pencil fa-sm"></i>
-                                    </a>
 
+                                    <!-- button modify -->                                   
+                                    <button type="button" class="btn btn-outline-secondary">
+                                        <i class="fa-solid fa-pencil fa-sm"></i>
+                                    </button>
+
+                                    <!-- button cancel --> 
                                     <button type="button" class="btn btn-outline-secondary" data-bs-toggle="modal" data-bs-target="#exampleModal">
                                         <i class="fa-solid fa-trash fa-sm"></i>
                                     </button>
@@ -117,25 +141,32 @@
                                     <!-- Modal -->
                                     <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
                                         <div class="modal-dialog">
-                                        <div class="modal-content">
-                                            <div class="modal-header">
-                                            <h1 class="modal-title fs-5" id="exampleModalLabel">Conferma Cancellazione</h1>
-                                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                            <div class="modal-content">
+                                                <div class="modal-header">
+                                                    <h1 class="modal-title fs-5" id="exampleModalLabel">
+                                                        Conferma Cancellazione
+                                                    </h1>
+                                                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close">
+
+                                                    </button>
+                                                </div>
+                                                <div class="modal-body">
+                                                Sei sicuro di voler rimuovere <strong class="text-uppercase fw-bold">"I pilastri della terra"</strong> dalla lista ?
+                                                </div>
+                                                <div class="modal-footer">
+                                                    <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Cancella</button>
+                                                    <button type="button" class="btn btn-secondary">
+                                                        Annulla
+                                                    </button>
+                                                </div>
                                             </div>
-                                            <div class="modal-body">
-                                            Sei sicuro di voler rimuovere "I pilastri della terra" dalla lista ?
-                                            </div>
-                                            <div class="modal-footer">
-                                            <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Cancella</button>
-                                            <button type="button" class="btn btn-secondary">Annulla</button>
-                                            </div>
-                                        </div>
                                         </div>
                                     </div>
+                                    <!-- end Modal -->
                                 </div>
                             </td>
                           </tr>
-                          <tr class="">
+                          <tr>
                             <td scope="row">
                                 I promessi sposi
                             </td>
@@ -145,10 +176,44 @@
                             <td>
                                 <span class="badge bg-success">Disponibile</span>
                             </td>
-                            <td class="text-center w-25">
+                            <td class="text-center w-25">                                
                                 <div>
-                                    <a href="" class="btn text-dark border-1 border-dark px-2 py-1"><i class="fa-solid fa-pencil fa-sm"></i></a>
-                                    <a href="" class="btn text-dark border-1 border-dark px-2 py-1"><i class="fa-solid fa-trash fa-sm"></i></a>
+                                    
+                                    <!-- button modify -->                                   
+                                    <button type="button" class="btn btn-outline-secondary">
+                                        <i class="fa-solid fa-pencil fa-sm"></i>
+                                    </button>
+
+                                    <!-- button cancel --> 
+                                    <button type="button" class="btn btn-outline-secondary" data-bs-toggle="modal" data-bs-target="#exampleModal2">
+                                        <i class="fa-solid fa-trash fa-sm"></i>
+                                    </button>
+                                    
+                                    <!-- Modal -->
+                                    <div class="modal fade" id="exampleModal2" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                        <div class="modal-dialog">
+                                            <div class="modal-content">
+                                                <div class="modal-header">
+                                                    <h1 class="modal-title fs-5" id="exampleModalLabel">
+                                                        Conferma Cancellazione
+                                                    </h1>
+                                                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close">
+
+                                                    </button>
+                                                </div>
+                                                <div class="modal-body">
+                                                Sei sicuro di voler rimuovere <strong class="text-uppercase fw-bold">"I promessi sposi"</strong> dalla lista ?
+                                                </div>
+                                                <div class="modal-footer">
+                                                    <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Cancella</button>
+                                                    <button type="button" class="btn btn-secondary">
+                                                        Annulla
+                                                    </button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- end Modal -->
                                 </div>
                             </td>
                           </tr>
@@ -164,14 +229,50 @@
                             </td>
                             <td class="text-center w-25">
                                 <div>
-                                    <a href="" class="btn text-dark border-1 border-dark px-2 py-1"><i class="fa-solid fa-pencil fa-sm"></i></a>
-                                    <a href="" class="btn text-dark border-1 border-dark px-2 py-1"><i class="fa-solid fa-trash fa-sm"></i></a>
+                                    <div>
+                                    
+                                        <!-- button modify -->                                   
+                                        <button type="button" class="btn btn-outline-secondary">
+                                            <i class="fa-solid fa-pencil fa-sm"></i>
+                                        </button>
+    
+                                        <!-- button cancel --> 
+                                        <button type="button" class="btn btn-outline-secondary" data-bs-toggle="modal" data-bs-target="#exampleModal3">
+                                            <i class="fa-solid fa-trash fa-sm"></i>
+                                        </button>
+                                        
+                                        <!-- Modal -->
+                                        <div class="modal fade" id="exampleModal3" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                            <div class="modal-dialog">
+                                                <div class="modal-content">
+                                                    <div class="modal-header">
+                                                        <h1 class="modal-title fs-5" id="exampleModalLabel">
+                                                            Conferma Cancellazione
+                                                        </h1>
+                                                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close">
+    
+                                                        </button>
+                                                    </div>
+                                                    <div class="modal-body">
+                                                    Sei sicuro di voler rimuovere <strong class="text-uppercase fw-bold">"Il signore degli anelli"</strong> dalla lista ?
+                                                    </div>
+                                                    <div class="modal-footer">
+                                                        <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Cancella</button>
+                                                        <button type="button" class="btn btn-secondary">
+                                                            Annulla
+                                                        </button>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <!-- end Modal -->
+                                    </div>
                                 </div>
                             </td>
                           </tr>
-                          <tr class="">
+                          <tr>
                             <td scope="row">
-                                Harry Potter e la pietra folosofale
+                                Harry Potter e la pietra filosofale
                             </td>
                             <td class="d-none d-md-table-cell">
                                 -
@@ -181,8 +282,44 @@
                             </td>
                             <td class="text-center w-25">
                                 <div>
-                                    <a href="" class="btn text-dark border-1 border-dark px-2 py-1"><i class="fa-solid fa-pencil fa-sm"></i></a>
-                                    <a href="" class="btn text-dark border-1 border-dark px-2 py-1"><i class="fa-solid fa-trash fa-sm"></i></a>
+                                    <div>
+                                    
+                                        <!-- button modify -->                                   
+                                        <button type="button" class="btn btn-outline-secondary">
+                                            <i class="fa-solid fa-pencil fa-sm"></i>
+                                        </button>
+    
+                                        <!-- button cancel --> 
+                                        <button type="button" class="btn btn-outline-secondary" data-bs-toggle="modal" data-bs-target="#exampleModal4">
+                                            <i class="fa-solid fa-trash fa-sm"></i>
+                                        </button>
+                                        
+                                        <!-- Modal -->
+                                        <div class="modal fade" id="exampleModal4" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                            <div class="modal-dialog">
+                                                <div class="modal-content">
+                                                    <div class="modal-header">
+                                                        <h1 class="modal-title fs-5" id="exampleModalLabel">
+                                                            Conferma Cancellazione
+                                                        </h1>
+                                                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close">
+    
+                                                        </button>
+                                                    </div>
+                                                    <div class="modal-body">
+                                                    Sei sicuro di voler rimuovere <strong class="text-uppercase fw-bold">"Harry Potter e la pietra filosofale"</strong> dalla lista ?
+                                                    </div>
+                                                    <div class="modal-footer">
+                                                        <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Cancella</button>
+                                                        <button type="button" class="btn btn-secondary">
+                                                            Annulla
+                                                        </button>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <!-- end Modal -->
+                                    </div>
                                 </div>
                             </td>
                           </tr>
@@ -198,12 +335,50 @@
                             </td>
                             <td class="text-center w-25">
                                 <div>
-                                    <a href="" class="btn text-dark border-1 border-dark px-2 py-1"><i class="fa-solid fa-pencil fa-sm"></i></a>
-                                    <a href="" class="btn text-dark border-1 border-dark px-2 py-1"><i class="fa-solid fa-trash fa-sm"></i></a>
+                                    <div>
+                                        <div>
+                                        
+                                            <!-- button modify -->                                   
+                                            <button type="button" class="btn btn-outline-secondary">
+                                                <i class="fa-solid fa-pencil fa-sm"></i>
+                                            </button>
+        
+                                            <!-- button cancel --> 
+                                            <button type="button" class="btn btn-outline-secondary" data-bs-toggle="modal" data-bs-target="#exampleModal5">
+                                                <i class="fa-solid fa-trash fa-sm"></i>
+                                            </button>
+                                            
+                                            <!-- Modal -->
+                                            <div class="modal fade" id="exampleModal5" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                                <div class="modal-dialog">
+                                                    <div class="modal-content">
+                                                        <div class="modal-header">
+                                                            <h1 class="modal-title fs-5" id="exampleModalLabel">
+                                                                Conferma Cancellazione
+                                                            </h1>
+                                                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close">
+        
+                                                            </button>
+                                                        </div>
+                                                        <div class="modal-body">
+                                                        Sei sicuro di voler rimuovere <strong class="text-uppercase fw-bold">"Il codice Da Vinci"</strong> dalla lista ?
+                                                        </div>
+                                                        <div class="modal-footer">
+                                                            <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Cancella</button>
+                                                            <button type="button" class="btn btn-secondary">
+                                                                Annulla
+                                                            </button>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <!-- end Modal -->
+                                        </div>
+                                    </div>
                                 </div>
                             </td>
                           </tr>
-                          <tr class="">
+                          <tr>
                             <td scope="row">
                                 Shining
                             </td>
@@ -215,8 +390,46 @@
                             </td>
                             <td class="text-center w-25">
                                 <div>
-                                    <a href="" class="btn text-dark border-1 border-dark px-2 py-1"><i class="fa-solid fa-pencil fa-sm"></i></a>
-                                    <a href="" class="btn text-dark border-1 border-dark px-2 py-1"><i class="fa-solid fa-trash fa-sm"></i></a>
+                                    <div>
+                                        <div>
+                                        
+                                            <!-- button modify -->                                   
+                                            <button type="button" class="btn btn-outline-secondary">
+                                                <i class="fa-solid fa-pencil fa-sm"></i>
+                                            </button>
+        
+                                            <!-- button cancel --> 
+                                            <button type="button" class="btn btn-outline-secondary" data-bs-toggle="modal" data-bs-target="#exampleModal6">
+                                                <i class="fa-solid fa-trash fa-sm"></i>
+                                            </button>
+                                            
+                                            <!-- Modal -->
+                                            <div class="modal fade" id="exampleModal6" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                                <div class="modal-dialog">
+                                                    <div class="modal-content">
+                                                        <div class="modal-header">
+                                                            <h1 class="modal-title fs-5" id="exampleModalLabel">
+                                                                Conferma Cancellazione
+                                                            </h1>
+                                                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close">
+        
+                                                            </button>
+                                                        </div>
+                                                        <div class="modal-body">
+                                                        Sei sicuro di voler rimuovere <strong class="text-uppercase fw-bold">"Shining"</strong> dalla lista ?
+                                                        </div>
+                                                        <div class="modal-footer">
+                                                            <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Cancella</button>
+                                                            <button type="button" class="btn btn-secondary">
+                                                                Annulla
+                                                            </button>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <!-- end Modal -->
+                                        </div>
+                                    </div>
                                 </div>
                             </td>
                           </tr>
@@ -232,12 +445,50 @@
                             </td>
                             <td class="text-center w-25">
                                 <div>
-                                    <a href="" class="btn text-dark border-1 border-dark px-2 py-1"><i class="fa-solid fa-pencil fa-sm"></i></a>
-                                    <a href="" class="btn text-dark border-1 border-dark px-2 py-1"><i class="fa-solid fa-trash fa-sm"></i></a>
+                                    <div>
+                                        <div>
+                                        
+                                            <!-- button modify -->                                   
+                                            <button type="button" class="btn btn-outline-secondary">
+                                                <i class="fa-solid fa-pencil fa-sm"></i>
+                                            </button>
+        
+                                            <!-- button cancel --> 
+                                            <button type="button" class="btn btn-outline-secondary" data-bs-toggle="modal" data-bs-target="#exampleModal7">
+                                                <i class="fa-solid fa-trash fa-sm"></i>
+                                            </button>
+                                            
+                                            <!-- Modal -->
+                                            <div class="modal fade" id="exampleModal7" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                                <div class="modal-dialog">
+                                                    <div class="modal-content">
+                                                        <div class="modal-header">
+                                                            <h1 class="modal-title fs-5" id="exampleModalLabel">
+                                                                Conferma Cancellazione
+                                                            </h1>
+                                                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close">
+        
+                                                            </button>
+                                                        </div>
+                                                        <div class="modal-body">
+                                                        Sei sicuro di voler rimuovere <strong class="text-uppercase fw-bold">"La divina commedia"</strong> dalla lista ?
+                                                        </div>
+                                                        <div class="modal-footer">
+                                                            <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Cancella</button>
+                                                            <button type="button" class="btn btn-secondary">
+                                                                Annulla
+                                                            </button>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <!-- end Modal -->
+                                        </div>
+                                    </div>
                                 </div>
                             </td>
                           </tr>
-                          <tr class="">
+                          <tr>
                             <td scope="row">
                                 Il trono di spade
                             </td>
@@ -249,8 +500,46 @@
                             </td>
                             <td class="text-center w-25">
                                 <div>
-                                    <a href="" class="btn text-dark border-1 border-dark px-2 py-1"><i class="fa-solid fa-pencil fa-sm"></i></a>
-                                    <a href="" class="btn text-dark border-1 border-dark px-2 py-1"><i class="fa-solid fa-trash fa-sm"></i></a>
+                                    <div>
+                                        <div>
+                                        
+                                            <!-- button modify -->                                   
+                                            <button type="button" class="btn btn-outline-secondary">
+                                                <i class="fa-solid fa-pencil fa-sm"></i>
+                                            </button>
+        
+                                            <!-- button cancel --> 
+                                            <button type="button" class="btn btn-outline-secondary" data-bs-toggle="modal" data-bs-target="#exampleModal8">
+                                                <i class="fa-solid fa-trash fa-sm"></i>
+                                            </button>
+                                            
+                                            <!-- Modal -->
+                                            <div class="modal fade" id="exampleModal8" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                                <div class="modal-dialog">
+                                                    <div class="modal-content">
+                                                        <div class="modal-header">
+                                                            <h1 class="modal-title fs-5" id="exampleModalLabel">
+                                                                Conferma Cancellazione
+                                                            </h1>
+                                                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close">
+        
+                                                            </button>
+                                                        </div>
+                                                        <div class="modal-body">
+                                                        Sei sicuro di voler rimuovere <strong class="text-uppercase fw-bold">"Il trono di spade"</strong> dalla lista ?
+                                                        </div>
+                                                        <div class="modal-footer">
+                                                            <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Cancella</button>
+                                                            <button type="button" class="btn btn-secondary">
+                                                                Annulla
+                                                            </button>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <!-- end Modal -->
+                                        </div>
+                                    </div>
                                 </div>
                             </td>
                           </tr>
@@ -266,12 +555,50 @@
                             </td>
                             <td class="text-center w-25">
                                 <div>
-                                    <a href="" class="btn text-dark border-1 border-dark px-2 py-1"><i class="fa-solid fa-pencil fa-sm"></i></a>
-                                    <a href="" class="btn text-dark border-1 border-dark px-2 py-1"><i class="fa-solid fa-trash fa-sm"></i></a>
+                                    <div>
+                                        <div>
+                                        
+                                            <!-- button modify -->                                   
+                                            <button type="button" class="btn btn-outline-secondary">
+                                                <i class="fa-solid fa-pencil fa-sm"></i>
+                                            </button>
+        
+                                            <!-- button cancel --> 
+                                            <button type="button" class="btn btn-outline-secondary" data-bs-toggle="modal" data-bs-target="#exampleModal9">
+                                                <i class="fa-solid fa-trash fa-sm"></i>
+                                            </button>
+                                            
+                                            <!-- Modal -->
+                                            <div class="modal fade" id="exampleModal9" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                                <div class="modal-dialog">
+                                                    <div class="modal-content">
+                                                        <div class="modal-header">
+                                                            <h1 class="modal-title fs-5" id="exampleModalLabel">
+                                                                Conferma Cancellazione
+                                                            </h1>
+                                                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close">
+        
+                                                            </button>
+                                                        </div>
+                                                        <div class="modal-body">
+                                                        Sei sicuro di voler rimuovere <strong class="text-uppercase fw-bold">"Il mondo di Sofia"</strong> dalla lista ?
+                                                        </div>
+                                                        <div class="modal-footer">
+                                                            <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Cancella</button>
+                                                            <button type="button" class="btn btn-secondary">
+                                                                Annulla
+                                                            </button>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <!-- end Modal -->
+                                        </div>
+                                    </div>
                                 </div>
                             </td>
                           </tr>
-                          <tr class="">
+                          <tr>
                             <td scope="row">
                                 Le cronache di Narnia: il leone, la strega e l'armadio
                             </td>
@@ -283,8 +610,46 @@
                             </td>
                             <td class="text-center w-25">
                                 <div>
-                                    <a href="" class="btn text-dark border-1 border-dark px-2 py-1"><i class="fa-solid fa-pencil fa-sm"></i></a>
-                                    <a href="" class="btn text-dark border-1 border-dark px-2 py-1"><i class="fa-solid fa-trash fa-sm"></i></a>
+                                    <div>
+                                        <div>
+                                        
+                                            <!-- button modify -->                                   
+                                            <button type="button" class="btn btn-outline-secondary">
+                                                <i class="fa-solid fa-pencil fa-sm"></i>
+                                            </button>
+        
+                                            <!-- button cancel --> 
+                                            <button type="button" class="btn btn-outline-secondary" data-bs-toggle="modal" data-bs-target="#exampleModal10">
+                                                <i class="fa-solid fa-trash fa-sm"></i>
+                                            </button>
+                                            
+                                            <!-- Modal -->
+                                            <div class="modal fade" id="exampleModal10" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                                <div class="modal-dialog">
+                                                    <div class="modal-content">
+                                                        <div class="modal-header">
+                                                            <h1 class="modal-title fs-5" id="exampleModalLabel">
+                                                                Conferma Cancellazione
+                                                            </h1>
+                                                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close">
+        
+                                                            </button>
+                                                        </div>
+                                                        <div class="modal-body">
+                                                        Sei sicuro di voler rimuovere <strong class="text-uppercase fw-bold">"Le cronache di Narnia: il leone, la strega e l'armadio"</strong> dalla lista ?
+                                                        </div>
+                                                        <div class="modal-footer">
+                                                            <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Cancella</button>
+                                                            <button type="button" class="btn btn-secondary">
+                                                                Annulla
+                                                            </button>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <!-- end Modal -->
+                                        </div>
+                                    </div>
                                 </div>
                             </td>
                           </tr>
@@ -300,12 +665,48 @@
                             </td>
                             <td class="text-center w-25">
                                 <div>
-                                    <a href="" class="btn text-dark border-1 border-dark px-2 py-1"><i class="fa-solid fa-pencil fa-sm"></i></a>
-                                    <a href="" class="btn text-dark border-1 border-dark px-2 py-1"><i class="fa-solid fa-trash fa-sm"></i></a>
+                                    <div>
+                                    
+                                        <!-- button modify -->                                   
+                                        <button type="button" class="btn btn-outline-secondary">
+                                            <i class="fa-solid fa-pencil fa-sm"></i>
+                                        </button>
+    
+                                        <!-- button cancel --> 
+                                        <button type="button" class="btn btn-outline-secondary" data-bs-toggle="modal" data-bs-target="#exampleModal11">
+                                            <i class="fa-solid fa-trash fa-sm"></i>
+                                        </button>
+                                        
+                                        <!-- Modal -->
+                                        <div class="modal fade" id="exampleModal11" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                            <div class="modal-dialog">
+                                                <div class="modal-content">
+                                                    <div class="modal-header">
+                                                        <h1 class="modal-title fs-5" id="exampleModalLabel">
+                                                            Conferma Cancellazione
+                                                        </h1>
+                                                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close">
+    
+                                                        </button>
+                                                    </div>
+                                                    <div class="modal-body">
+                                                    Sei sicuro di voler rimuovere <strong class="text-uppercase fw-bold">"Il piccolo principe"</strong> dalla lista ?
+                                                    </div>
+                                                    <div class="modal-footer">
+                                                        <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Cancella</button>
+                                                        <button type="button" class="btn btn-secondary">
+                                                            Annulla
+                                                        </button>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <!-- end Modal -->
+                                    </div>
                                 </div>
                             </td>
                           </tr>
-                          <tr class="">
+                          <tr>
                             <td scope="row">
                                 La storia infinita
                             </td>
@@ -317,13 +718,52 @@
                             </td>
                             <td class="text-center w-25">
                                 <div>
-                                    <a href="" class="btn text-dark border-1 border-dark px-2 py-1"><i class="fa-solid fa-pencil fa-sm"></i></a>
-                                    <a href="" class="btn text-dark border-1 border-dark px-2 py-1"><i class="fa-solid fa-trash fa-sm"></i></a>
+                                    <div>
+                                        <div>
+                                        
+                                            <!-- button modify -->                                   
+                                            <button type="button" class="btn btn-outline-secondary">
+                                                <i class="fa-solid fa-pencil fa-sm"></i>
+                                            </button>
+        
+                                            <!-- button cancel --> 
+                                            <button type="button" class="btn btn-outline-secondary" data-bs-toggle="modal" data-bs-target="#exampleModal12">
+                                                <i class="fa-solid fa-trash fa-sm"></i>
+                                            </button>
+                                            
+                                            <!-- Modal -->
+                                            <div class="modal fade" id="exampleModal12" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                                <div class="modal-dialog">
+                                                    <div class="modal-content">
+                                                        <div class="modal-header">
+                                                            <h1 class="modal-title fs-5" id="exampleModalLabel">
+                                                                Conferma Cancellazione
+                                                            </h1>
+                                                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close">
+        
+                                                            </button>
+                                                        </div>
+                                                        <div class="modal-body">
+                                                        Sei sicuro di voler rimuovere <strong class="text-uppercase fw-bold">"La storia infinita"</strong> dalla lista ?
+                                                        </div>
+                                                        <div class="modal-footer">
+                                                            <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Cancella</button>
+                                                            <button type="button" class="btn btn-secondary">
+                                                                Annulla
+                                                            </button>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <!-- end Modal -->
+                                        </div>
+                                    </div>
                                 </div>
                             </td>
                           </tr>
                         </tbody>
                     </table>
+                    <!-- end table -->
                 </div>
                 <div class="col-12 col-xl-3">
                     <div class="card">
